@@ -23,7 +23,7 @@ export default function Popup(props: any) {
                     <SettingsIcon iconSize={30} className={""} />
                     Open Extension Settings
                 </li>
-                <li
+                {/* <li
                     onClick={() => {
                         window.postMessage(
                             {
@@ -36,7 +36,7 @@ export default function Popup(props: any) {
                 >
                     <FeedbackIcon iconSize={30} clickAction={() => {}} />
                     Submit Feedback
-                </li>
+                </li> */}
             </ul>
         </div>
     );

@@ -28,4 +28,4 @@
 - 2.0.0 - Remove header prompt. Update old dependencies. 
 - 2.0.1 - Fix header spacing and add search filter to recent records. 
 - 2.0.2 - Add logic to handle 2025.2 UI updates. 
-- 2.0.3 - Remove NS version specific logic. 
+- 2.0.3 - Remove NS version specific logic. Remove Feedback (no way to handle it anymore).

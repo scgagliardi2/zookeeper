@@ -22,7 +22,7 @@ function zkpr_init() {
             if (!!zkpr_user) {
                 //add props to user object before sending
                 zkpr_user.version = Number(zkpr_user.version);
-                zkpr_user.isCurrent = zkpr_user.version > zkpr_previous_version;
+                zkpr_user.isCurrent = true;//zkpr_user.version > zkpr_previous_version;
                 zkpr_user.isPrevious =
                     zkpr_user.version == zkpr_previous_version;
                 zkpr_user.isEditMode = zkpr_Record.isInEditMode();

@@ -24,8 +24,8 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     response();
 });
 
-//add feedback react app.
-addFeedback();
+// //add feedback react app.
+// addFeedback();
 
 //listen for call from "zkpr_inject.js" with user data.
 window.addEventListener(
