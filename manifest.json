@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "ZooKeeper (Oracle NetSuite Extension)",
     "description": "ZooKeeper is an application that adds helpful UI features to NetSuite.",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "icons": {
         "16": "img/logo/With Backgrounds/16px/zookeeper-icon-yellow-blue-16px.png",
         "48": "img/logo/With Backgrounds/48px/zookeeper-icon-yellow-blue-48px.png",
