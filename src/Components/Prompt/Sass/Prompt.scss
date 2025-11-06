@@ -1,0 +1,13 @@
+.zkpr-prompt {
+    display: flex;
+    align-items: center;
+    min-width: 250px;
+    width: inherit;
+}
+
+.zkpr-prompt-input {
+    padding: 8px;
+    border: 1px solid var(--zkpr-color-secondary);
+    border-radius: var(--zkpr-border-radius-small);
+    width: 100%;
+}

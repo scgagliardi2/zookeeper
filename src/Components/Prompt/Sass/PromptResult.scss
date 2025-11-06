@@ -1,0 +1,36 @@
+.zkpr-prompt-result {
+    padding: 17px;
+    border-radius: var(--zkpr-border-radius-medium);
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 0px;
+    white-space: pre-line;
+}
+
+.zkpr-user-result {
+    float: left;
+    color: var(--zkpr-background) !important;
+    background-color: var(--zkpr-color-secondary);
+    // box-shadow: var(--zkpr-box-shadow-input);
+}
+
+.zkpr-ai-result {
+    float: right;
+    border: 2px solid var(--zkpr-color-secondary);
+    // box-shadow: var(--zkpr-box-shadow-input-colored);
+
+    a {
+        color: var(--zkpr-color-primary) !important;
+    }
+}
+
+.zkpr-errorMessage {
+    font-weight: bold;
+    background-color: var(--zkpr-color-error);
+    // box-shadow: var(--zkpr-box-shadow-input-error);
+}
+
+.zkpr-errorMessageCont {
+    width: 100%;
+}

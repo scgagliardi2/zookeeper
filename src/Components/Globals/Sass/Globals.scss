@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    --zkpr-color-primary: #242f40;
+    --zkpr-color-secondary: #f35638;
+    --zkpr-color-tertiary: #cca439;
+    --zkpr-background: #f8f7f3;
+    --zkpr-color-success: #57835a;
+    --zkpr-color-error: #fd3030;
+    --zkpr-color-shadow: #242f40;
+
+    --zkpr-box-shadow: 4px 4px 14px 0px var(--zkpr-color-shadow);
+
+    --zkpr-box-shadow-button: 6px 6px 8px #d3d2cf, -6px -6px 8px #ffffff;
+    --zkpr-box-shadow-button-selected: inset 6px 6px 8px #ffffff,
+        inset -6px -6px 8px #d3d2cf;
+    --zkpr-box-shadow-submit-button-selected: inset 6px 6px 8px #4a6f4d,
+        inset -6px -6px 8px #649768;
+
+    --zkpr-box-shadow-input: inset 3px 3px 3px #cbcdd0,
+        inset -3px -3px 3px #ffffff;
+    --zkpr-box-shadow-input-colored: inset 3px 3px 3px #1f2836,
+        inset -3px -3px 3px #29364a;
+    --zkpr-box-shadow-input-error: inset 3px 3px 3px #d72929,
+        inset -3px -3px 3px #ff3737;
+
+    --zkpr-border-radius-large: 20px;
+    --zkpr-border-radius-medium: 10px;
+    --zkpr-border-radius-small: 5px;
+
+    --zkpr-transition-long: all 0.85s ease;
+    --zkpr-transition-short: all 0.5s ease;
+    --zkpr-transition-tiny: all 0.2s ease;
+
+    color: var(--zkpr-color-primary);
+    background-color: var(--zkpr-background);
+}

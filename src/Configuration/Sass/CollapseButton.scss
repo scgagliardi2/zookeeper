@@ -1,0 +1,35 @@
+.zkpr-config-expand-collapse-icon {
+    font-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 22px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.zkpr-config-expand-collapse-icon::before, .zkpr-config-expand-collapse-icon::after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: .16em;
+    top: calc( (1em / 2 ) - .08em );
+    background-color: var(--zkpr-background);
+    transition: 0.3s ease-in-out all;
+    border-radius: 0.03em;
+}
+
+.zkpr-config-expand-collapse-icon::after {
+    transform: rotate(90deg);   
+}
+
+.zkpr-config-collapsed.zkpr-config-expand-collapse-icon::after {
+    transform: rotate(180deg);
+}
+
+.zkpr-config-collapsed.zkpr-config-expand-collapse-icon::before {
+    transform: rotate(90deg) scale(0);
+}

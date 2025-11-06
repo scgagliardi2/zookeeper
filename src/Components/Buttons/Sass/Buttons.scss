@@ -1,0 +1,135 @@
+.zkpr-button {
+    height: inherit;
+    padding: 10px 40px;
+    font-size: x-large;
+    cursor: pointer;
+    transition: var(--zkpr-transition-short);
+    margin: auto;
+    max-width: 25%;
+    border-radius: var(--zkpr-border-radius-medium);
+    border: 0px;
+}
+
+.zkpr-submit-button {
+    @extend .zkpr-button;
+
+    float: left;
+    margin-bottom: 20px;
+    color: var(--zkpr-background);
+    background-color: var(--zkpr-color-success);
+    min-width: 230px;
+    border-radius: 0px;
+    text-align: center;
+
+    &:disabled {
+        opacity: 0.75;
+    }
+}
+
+.zkpr-submit-button-small {
+    @extend .zkpr-submit-button;
+
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: medium;
+}
+
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    width: $size;
+    height: $size;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: calc(($size - $thickness) / 2);
+        left: 0;
+        right: 0;
+        height: $thickness;
+        background: $color;
+        border-radius: $thickness;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.zkpr-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 25px;
+    right: 20px;
+    transition: var(--zkpr-transition-short);
+
+    &:active {
+        box-shadow: var(--zkpr-box-shadow-button-selected);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.zkpr-settings-icon {
+    @extend .zkpr-icon;
+
+    top: 27px;
+    right: 70px;
+}
+
+.zkpr-icon-close {
+    @extend .zkpr-icon;
+
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: var(--zkpr-color-tertiary);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &:active {
+        box-shadow: var(--zkpr-box-shadow-button-selected);
+    }
+
+    .zkpr-icon-cross {
+        @include cross(20px, var(--zkpr-color-primary), 4px);
+    }
+}
+
+.zkpr-visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.zkpr-return-icon-body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

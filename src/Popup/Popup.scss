@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.zkpr-popup-container {
+    width: 240px;
+    padding: 5px;
+
+    ul {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: var(--zkpr-border-radius-small);
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        transition: var(--zkpr-transition-short);
+
+        &:hover {
+            box-shadow: var(--zkpr-box-shadow-button);
+        }
+
+        &:active {
+            box-shadow: var(--zkpr-box-shadow-button-selected);
+        }
+
+        &.zkpr-popup-title {
+            cursor: default;
+            border-radius: 0;
+            font-weight: bold;
+            font-size: large;
+            border-bottom: 2px solid black;
+            justify-content: center;
+        
+            &:hover {
+                box-shadow: none;
+            }
+        
+            &:active {
+                box-shadow: none;
+            }
+        }
+    }
+}
+

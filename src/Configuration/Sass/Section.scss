@@ -1,0 +1,92 @@
+.zkpr-config-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--zkpr-color-primary);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+    a {
+        color: var(--zkpr-background);
+    }
+
+    table {
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    th {
+        padding: 0px 0px 15px 0px;
+        font-size: x-large;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    td {
+        padding: 0px 0px 15px 0px;
+        font-size: large;
+
+        b {
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        i {
+            margin-bottom: 5px;
+            font-size: medium;
+        }
+
+    }
+}
+
+.zkpr-config-input-column {
+    text-align: center;
+    padding: 0px 40px;
+
+    label {
+        display: block;
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 10px 25px;
+        border-radius: 5px;
+        border: 0px;
+        text-align: center;
+        top: 2px;
+        min-width: 210px;
+    }
+}
+
+.zkpr-config-section-collapsed {
+    @extend .zkpr-config-section;
+
+    height: 25px;
+}
+
+.zkpr-config-section-title {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0px;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 41px;
+        top: 64px;
+        width: 10%;
+        height: 1px;
+        border-bottom: 4px solid var(--zkpr-background);
+    }
+}
+
+.zkpr-config-input-column-description {
+    width: 50%;
+}

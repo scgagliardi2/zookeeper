@@ -1,0 +1,64 @@
+.zkpr-record-helper-header {
+    display: flex;
+    text-align: left;
+}
+
+.zkpr-record-helper-title {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        padding-bottom: 10px;
+        display: inline;
+        margin-right: 50px;
+        font-size: x-large;
+    }
+}
+
+.zkpr-record-helper-links {
+    padding-bottom: 10px;
+    width: 20%;
+    min-width: 250px;
+    font-size: smaller;
+
+    a {
+        margin-right: 50px;
+        text-decoration: none;
+        color: var(--color-secondary);
+        font-weight: bold;
+    }
+
+    svg {
+        padding-right: 2px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.zkpr-record-helper-table {
+
+    .zkpr-record-helper-navigableField {
+        transition: 0.5s ease;
+        cursor: alias;
+    }
+    .zkpr-record-helper-navigableField:hover {
+        box-shadow: var(--zkpr-box-shadow);
+        background-color: var(--zkpr-color-tertiary);
+    }
+}
+
+.zkpr-record-helper-sublists-table {
+    @extend .zkpr-record-helper-table;
+
+    td,
+    th {
+        width: 48%;
+    }
+}
+
+.zkpr-record-helper-sublist-header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}

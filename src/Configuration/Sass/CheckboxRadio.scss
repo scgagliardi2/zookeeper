@@ -1,0 +1,51 @@
+#zkpr-config {
+    input[type=radio], input[type=checkbox] {
+        position: relative;
+        margin: auto;
+        display: block;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        z-index: 100;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    input[type=radio]:checked + label svg path, input[type=checkbox]:checked + label svg path {
+        stroke-dashoffset: 0;
+        border: 2px solid var(--zkpr-color-tertiary);
+    }
+    input[type=radio]:focus + label, input[type=checkbox]:focus + label {
+        transform: scale(1.03);
+    }
+    [type=radio] + label, input[type=checkbox] + label {
+        position: relative;
+        top: -20px;
+        margin: auto;
+        display: block;
+        border: 2px solid var(--zkpr-color-tertiary);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    [type=radio] + label:active, [type=checkbox] + label:active {
+        transform: scale(1.05);
+        border: 2px solid var(--zkpr-color-tertiary);
+    
+    }
+    [type=radio] + label svg, [type=checkbox] + label svg {
+        pointer-events: none;
+    }
+    [type=radio] + label svg path, [type=checkbox] + label svg path {
+        fill: none;
+        stroke: var(--zkpr-color-tertiary);
+        stroke-width: 6px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 100;
+        stroke-dashoffset: 101;
+        transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);
+    }
+}

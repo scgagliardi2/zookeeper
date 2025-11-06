@@ -1,0 +1,31 @@
+.zkpr-config-tab-cont {
+    width: 100%;
+    max-width: 1080px;
+    margin: 20px auto;
+    display: flex;
+    transition: 0.5s all ease;
+    justify-content: space-between;
+}
+
+.zkpr-config-tab {
+    background-color: var(--zkpr-color-primary);
+    padding: 20px 40px;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.zkpr-config-tab-selected {
+    @extend .zkpr-config-tab;
+
+    background: var(--zkpr-color-tertiary);
+}
+
+.zkpr-config-tab-title {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 0px;
+}

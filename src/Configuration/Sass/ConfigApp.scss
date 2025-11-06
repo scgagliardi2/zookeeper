@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    margin: auto;   
+    
+    color: var(--zkpr-background);
+    background-color: var(--zkpr-background);
+}
+
+header {
+    text-align: center;
+    background-color: var(--zkpr-color-primary);
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.zkpr-config-title {
+    color: var(--zkpr-color-primary);
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 20px 0px;
+}
+
+.zkpr-color-blocks {
+
+    position: relative;
+    top: -30px;
+    div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--zkpr-background);
+    }
+}
+
+.zkpr-ag-logo {
+    color: black;
+    text-align: center;
+
+    h1 {
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+    }
+}

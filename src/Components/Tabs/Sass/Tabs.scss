@@ -1,0 +1,31 @@
+.zkpr-module-tabs-container {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.zkpr-module-tab {
+    color: var(--zkpr-background);
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+    background-color: var(--zkpr-color-primary);
+    cursor: pointer;
+    margin-right: 1px;
+    font-size: large;
+}
+
+.zkpr-module-tab-selected {
+    @extend .zkpr-module-tab;
+
+    background-color: var(--zkpr-color-tertiary);
+    cursor: default;
+}
+
+.zkpr-module-tab-small {
+    @extend .zkpr-module-tab;
+
+    font-size: smaller;
+    width: 15%;
+}
